@@ -107,28 +107,11 @@
                             <h3 class="text-xl font-bold text-slate-900">빠른 간편 견적 요청</h3>
                             <span class="text-xs bg-blue-100 text-blue-700 px-2.5 py-1 rounded-md font-semibold">소요시간 30초</span>
                         </div>
-                        <form onsubmit="handleQuickSubmit(event)" class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-600 mb-1">성함 / 상호명 *</label>
-                                <input type="text" id="quick-name" required placeholder="홍길동" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-600 mb-1">연락처 *</label>
-                                <input type="tel" id="quick-phone" required placeholder="010-0000-0000" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-600 mb-1">희망 차종 *</label>
-                                <input type="text" id="quick-car" required placeholder="예: 아반떼, 그랜저, 카니발, GV80 등" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm">
-                            </div>
-                            <div class="pt-2">
-                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition text-sm">
-                                    상담 신청하기
-                                </button>
-                            </div>
-                            <p class="text-xs sm:text-sm text-slate-500 text-center">
-                                <i class="fa-solid fa-lock text-xs mr-1 text-slate-400"></i> 입력하신 정보는 견적 안내 목적으로만 사용됩니다.
-                            </p>
-                        </form>
+                        <div class="text-center py-3">
+                            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">네이버폼으로 빠른 상담 신청</h2>
+                            <p class="text-slate-600 mb-5">희망 차종과 연락처를 네이버폼에 남겨주시면 확인 후 안내해 드립니다.</p>
+                            <a href="https://form.naver.com/response/elO5MIWJwjuLVVYTADi5bg" target="_blank" rel="noopener noreferrer" class="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-base sm:text-lg">네이버폼 상담 신청하기</a>
+                        </div>
                     </div>
                 </div>
 
@@ -340,83 +323,10 @@
                     <p class="text-slate-400 text-sm sm:text-base mt-2">원하시는 조건을 선택해 주시면 가장 정확하고 합리적인 견적서를 보내드립니다.</p>
                 </div>
 
-                <form id="mainQuoteForm" onsubmit="handleMainSubmit(event)" class="space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Name -->
-                        <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">이름 / 상호명 <span class="text-blue-400">*</span></label>
-                            <input type="text" id="main-name" required placeholder="성함 또는 법인/사업자명" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
-                        </div>
-                        <!-- Phone -->
-                        <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">연락처 <span class="text-blue-400">*</span></label>
-                            <input type="tel" id="main-phone" required placeholder="010-0000-0000" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Car Model -->
-                        <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">관심 차종 <span class="text-blue-400">*</span></label>
-                            <input type="text" id="main-car" required placeholder="예: 카니발 하이브리드, GV80 등" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
-                        </div>
-                        <!-- Business Type -->
-                        <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">이용 형태 <span class="text-blue-400">*</span></label>
-                            <select id="main-user-type" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
-                                <option value="개인/개인사업자">개인 / 개인사업자</option>
-                                <option value="법인사업자">법인사업자</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Product Type Choice (Radio) -->
-                    <div>
-                        <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">희망 상품 선택 <span class="text-blue-400">*</span></label>
-                        <div class="grid grid-cols-3 gap-3">
-                            <label class="cursor-pointer">
-                                <input type="radio" name="product_type" value="장기렌트" checked class="peer sr-only">
-                                <div class="text-center py-3 border border-slate-700 rounded-xl text-sm font-semibold text-slate-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600 transition">
-                                    장기렌트
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="product_type" value="신차리스" class="peer sr-only">
-                                <div class="text-center py-3 border border-slate-700 rounded-xl text-sm font-semibold text-slate-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600 transition">
-                                    신차리스
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="product_type" value="추천필요" class="peer sr-only">
-                                <div class="text-center py-3 border border-slate-700 rounded-xl text-sm font-semibold text-slate-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600 transition">
-                                    추천 필요
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Privacy Agreement Checkbox (Mandatory for Naver Powerlink Approval) -->
-                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 space-y-3">
-                        <div class="flex items-start space-x-3">
-                            <input type="checkbox" id="privacy-check" required class="mt-1 w-4 h-4 text-blue-600 bg-slate-900 border-slate-700 rounded focus:ring-blue-500">
-                            <label for="privacy-check" class="text-xs text-slate-300 leading-relaxed cursor-pointer">
-                                <span class="font-bold text-white">[필수]</span> 개인정보 수집 및 이용에 동의합니다.
-                            </label>
-                        </div>
-                        <div class="text-xs sm:text-sm text-slate-400 pl-7 space-y-1 leading-normal">
-                            <p>• 수집 항목: 이름, 연락처, 관심 차종, 이용 형태, 희망 상품</p>
-                            <p>• 수집 목적: 신차 장기렌트·리스 최적 견적 안내 및 1:1 상담 진행</p>
-                            <p>• 보유 및 이용 기간: 상담 완료 후 즉시 파기 (관계 법령에 따름)</p>
-                        </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-600/30 transition text-base sm:text-lg">
-                            무료 견적서 신청하기
-                        </button>
-                    </div>
-                </form>
+                <div class="text-center">
+                    <p class="text-slate-300 text-base sm:text-lg mb-6">상담 신청은 안전한 네이버폼에서 작성해 주세요. 제출 후 네이버폼 응답 알림으로 신청 내용을 확인할 수 있습니다.</p>
+                    <a href="https://form.naver.com/response/elO5MIWJwjuLVVYTADi5bg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-lg">네이버폼에서 상담 신청하기 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -454,70 +364,5 @@
         </div>
     </footer>
 
-    <!-- Result Modal UI (Native JavaScript Triggered) -->
-    <div id="successModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl transform transition-all">
-            <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto text-2xl">
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <h3 class="text-xl font-bold text-slate-900">견적 신청 완료</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-                현재 이 양식은 온라인 접수 서버와 연결되어 있지 않습니다.<br/>
-                상담은 타타리아 전화번호로 문의해 주세요.
-            </p>
-            <button onclick="closeModal()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl text-sm transition">
-                확인
-            </button>
-        </div>
-    </div>
-
-    <script>
-        // Quick Form Submission Logic
-        function handleQuickSubmit(event) {
-            event.preventDefault();
-            const name = document.getElementById('quick-name').value;
-            const phone = document.getElementById('quick-phone').value;
-            const car = document.getElementById('quick-car').value;
-
-            if(!name || !phone || !car) {
-                alert('모든 필수 항목을 입력해주세요.');
-                return;
-            }
-
-            openModal();
-            event.target.reset();
-        }
-
-        // Main Form Submission Logic
-        function handleMainSubmit(event) {
-            event.preventDefault();
-            const name = document.getElementById('main-name').value;
-            const phone = document.getElementById('main-phone').value;
-            const car = document.getElementById('main-car').value;
-            const privacyChecked = document.getElementById('privacy-check').checked;
-
-            if(!privacyChecked) {
-                alert('개인정보 수집 및 이용 동의에 체크해 주세요.');
-                return;
-            }
-
-            if(!name || !phone || !car) {
-                alert('모든 필수 입력 사항을 채워주세요.');
-                return;
-            }
-
-            openModal();
-            event.target.reset();
-        }
-
-        // Modal Open / Close Handler
-        function openModal() {
-            document.getElementById('successModal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('successModal').classList.add('hidden');
-        }
-    </script>
 </body>
 </html>
