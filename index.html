@@ -1,5 +1,3 @@
-아래 HTML을 전체 선택해 복사해서 사용하시면 됩니다. 이미지는 `images` 폴더에 함께 있어야 표시됩니다.
-
 ```html
 <!DOCTYPE html>
 <html lang="ko">
@@ -7,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>타타리아 | 신차 장기렌트·리스</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Inter & Noto Sans KR -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,7 +16,6 @@
             scroll-behavior: smooth;
             font-size: 17px;
         }
-        /* Custom Customizations */
         .gradient-bg {
             background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #1E3A8A 100%);
         }
@@ -33,7 +27,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- 1. Header Navigation -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
@@ -42,462 +35,294 @@
                 </div>
                 <div>
                     <span class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight block">타타리아</span>
-                    <span class="text-xs sm:text-sm text-blue-600 font-semibold block tracking-wider uppercase">신차 장기렌트 · 리스 전문</span>
+                    <span class="text-xs sm:text-sm text-blue-600 font-semibold block tracking-wider">신차 장기렌트 · 리스 전문</span>
                 </div>
             </div>
             <div class="flex items-center space-x-3 sm:space-x-4">
-                <a href="#compare" class="hidden md:inline-block text-slate-600 hover:text-blue-600 font-medium text-sm transition">상품 비교</a>
-                <a href="#process" class="hidden md:inline-block text-slate-600 hover:text-blue-600 font-medium text-sm transition">진행 절차</a>
-                <a href="#quote-form" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm sm:text-base shadow-md shadow-blue-500/20 transition flex items-center space-x-1.5">
-                    <i class="fa-regular fa-paper-plane"></i>
-                    <span>무료 견적 신청</span>
+                <a href="#compare" class="hidden md:inline-block text-slate-600 hover:text-blue-600 font-medium text-sm">상품 비교</a>
+                <a href="#process" class="hidden md:inline-block text-slate-600 hover:text-blue-600 font-medium text-sm">진행 절차</a>
+                <a href="#quote-form" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm sm:text-base shadow-md">
+                    무료 견적 신청
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- 2. Hero Section -->
     <section class="gradient-bg text-white py-16 sm:py-24 relative overflow-hidden">
-        <!-- Background Pattern Elements -->
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 px-3.5 py-1.5 rounded-full text-blue-300 text-sm sm:text-base font-medium">
                         <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
                         <span>신차 장기렌트 · 리스 전문 타타리아</span>
                     </div>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight sm:leading-tight">
-                        타타리아와 함께<br/>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                        타타리아와 함께<br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">신차 장기렌트 · 리스</span> 맞춤 견적
                     </h1>
-                    <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        장기렌트와 리스 중 무엇이 유리할지 고민이신가요?<br class="hidden sm:inline"/>
-                        사업자 절세 혜택부터 월 납입금 최적화까지 전문 컨설턴트가 1:1 맞춤 견적을 안내해 드립니다.
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        장기렌트와 리스 중 무엇이 유리할지 고민이신가요?<br>
+                        사업자 절세 혜택부터 월 납입금까지 1:1 맞춤 견적을 안내해 드립니다.
                     </p>
                     <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="#quote-form" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-600/30 transition text-center text-base">
+                        <a href="#quote-form" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg text-center text-base">
                             실시간 맞춤 견적 받기
                         </a>
-                        <a href="#compare" class="w-full sm:w-auto border border-slate-600 hover:border-slate-400 text-slate-200 font-semibold px-6 py-4 rounded-xl transition text-center text-base bg-slate-800/40">
-                            렌트 vs 리스 차이점 보기
+                        <a href="#compare" class="w-full sm:w-auto border border-slate-600 text-slate-200 font-semibold px-6 py-4 rounded-xl text-center text-base bg-slate-800/40">
+                            렌트 vs 리스 비교
                         </a>
                     </div>
-                    
-                    <!-- Stats Badge -->
                     <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-700/60 max-w-lg mx-auto lg:mx-0">
-                        <div>
-                            <p class="text-2xl sm:text-3xl font-bold text-white">21개사</p>
-                            <p class="text-xs text-slate-400 mt-1">제휴 금융사 비교</p>
-                        </div>
-                        <div>
-                            <p class="text-2xl sm:text-3xl font-bold text-white">1:1 맞춤</p>
-                            <p class="text-xs text-slate-400 mt-1">전문 컨설팅</p>
-                        </div>
-                        <div>
-                            <p class="text-2xl sm:text-3xl font-bold text-white">비용절감</p>
-                            <p class="text-xs text-slate-400 mt-1">최적 조건 안내</p>
-                        </div>
+                        <div><p class="text-2xl sm:text-3xl font-bold">맞춤 견적</p><p class="text-sm text-slate-400 mt-1">조건별 상담</p></div>
+                        <div><p class="text-2xl sm:text-3xl font-bold">1:1 상담</p><p class="text-sm text-slate-400 mt-1">전문 안내</p></div>
+                        <div><p class="text-2xl sm:text-3xl font-bold">타타리아</p><p class="text-sm text-slate-400 mt-1">신차 렌트·리스</p></div>
                     </div>
                 </div>
 
-                <!-- Quick Consultation Mini Card (Hero Right) -->
                 <div class="lg:col-span-5">
                     <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/20 text-slate-900">
-                        <div class="flex items-center justify-between mb-6">
-                            <h3 class="text-xl font-bold text-slate-900">빠른 간편 견적 요청</h3>
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2.5 py-1 rounded-md font-semibold">소요시간 30초</span>
-                        </div>
+                        <h2 class="text-xl sm:text-2xl font-bold mb-6">빠른 간편 견적 요청</h2>
                         <form onsubmit="handleQuickSubmit(event)" class="space-y-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-600 mb-1">성함 / 상호명 *</label>
-                                <input type="text" id="quick-name" required placeholder="홍길동" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm">
+                                <label class="block text-sm font-semibold text-slate-600 mb-1">성함 / 상호명 *</label>
+                                <input type="text" id="quick-name" required placeholder="성함 또는 상호명" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-base">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-600 mb-1">연락처 *</label>
-                                <input type="tel" id="quick-phone" required placeholder="010-0000-0000" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm">
+                                <label class="block text-sm font-semibold text-slate-600 mb-1">연락처 *</label>
+                                <input type="tel" id="quick-phone" required placeholder="010-0000-0000" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-base">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-600 mb-1">희망 차종 *</label>
-                                <input type="text" id="quick-car" required placeholder="예: 아반떼, 그랜저, 카니발, GV80 등" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm">
+                                <label class="block text-sm font-semibold text-slate-600 mb-1">희망 차종 *</label>
+                                <input type="text" id="quick-car" required placeholder="예: 아이오닉 9, 쏘나타" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-base">
                             </div>
-                            <div class="pt-2">
-                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition text-sm">
-                                    상담 신청하기
-                                </button>
-                            </div>
-                            <p class="text-xs sm:text-sm text-slate-500 text-center">
-                                <i class="fa-solid fa-lock text-xs mr-1 text-slate-400"></i> 입력하신 정보는 견적 안내 목적으로만 사용됩니다.
-                            </p>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl text-base">상담 신청하기</button>
+                            <p class="text-sm text-slate-500 text-center">입력하신 정보는 견적 안내 목적으로만 사용됩니다.</p>
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-
-    <!-- 타타리아 프로모션 이미지 및 차량별 조건 -->
     <section class="py-12 sm:py-16 bg-slate-950 text-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        <div class="text-center"><p class="text-base sm:text-lg font-bold text-cyan-300">타타리아 11월 신차 장기렌트 · 리스 프로모션</p><h2 class="text-3xl sm:text-4xl font-extrabold mt-2">차량별 특별 조건을 확인해 보세요</h2></div>
-        <img src="images/november-promotion.png" alt="현대·기아·제네시스 11월 K-페스타 연말 특가 프로모션" class="w-full rounded-2xl shadow-2xl" loading="lazy">
-      </div>
-    </section>
-    <section class="py-12 sm:py-16 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        <div class="text-center"><p class="text-base sm:text-lg font-bold text-blue-600">11월 한정 특별 조건</p><h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">아이오닉 9 롱레인지 익스클루시브 AWD</h2><p class="text-lg sm:text-xl text-slate-600 mt-3">6인승 · 연 30,000km · 60개월 기준</p></div>
-        <img src="images/ioniq9-promotion.png" alt="아이오닉 9 AWD 월 렌트료 993,520원 프로모션" class="w-full rounded-2xl shadow-lg" loading="lazy">
-        <div class="grid lg:grid-cols-2 gap-6 items-start">
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-7"><h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">아이오닉 9 견적 주요 조건</h3><ul class="space-y-3 text-base sm:text-lg text-slate-700"><li>차량: 현대 아이오닉 9 롱레인지 익스클루시브 AWD (6인승)</li><li>외장: 어비스 블랙 펄 / 빌트인 캠 2 포함</li><li>차량 가격: 71,420,000원</li><li>계약: 장기렌트 60개월 / 연 30,000km</li><li>보증금·선납금: 없음 (초기 비용 0원)</li><li>만기 잔존가치: 28,638,500원</li><li class="font-extrabold text-blue-700">월 렌트료: 993,520원 (VAT·자동차세·보험료 포함)</li></ul><p class="text-sm sm:text-base text-slate-500 mt-4">차량 할인 약 400만 원 및 보조금 355만 원 반영 조건입니다. 실제 월 납입금은 심사와 계약 조건에 따라 달라질 수 있습니다.</p></div>
-          <img src="images/ioniq9-details.png" alt="아이오닉 9 상세 견적 조건 및 특가 안내" class="w-full rounded-2xl border border-slate-200" loading="lazy">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="text-center">
+                <p class="text-lg font-bold text-cyan-300">타타리아 신차 장기렌트 · 리스 프로모션</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">차량별 특별 조건을 확인해 보세요</h2>
+            </div>
+            <img src="november-promotion.png" alt="현대·기아·제네시스 차량 프로모션" class="w-full rounded-2xl shadow-2xl" loading="lazy">
         </div>
-        <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm"><h3 class="bg-slate-900 text-white text-xl sm:text-2xl font-bold p-5">차종별 월 납입료 안내 (60개월 기준)</h3><img src="images/monthly-price-table.png" alt="아반떼, 투싼 NX4, 투싼 하이브리드, 쏘나타, K5, 기아 EV3, EV6, 아이오닉 9 월 납입료 표" class="w-full" loading="lazy"></div>
-        <p class="text-sm sm:text-base text-slate-500">월 납입료는 안내 이미지 기준이며 차량 재고, 옵션, 약정거리, 심사 결과에 따라 변동될 수 있습니다. 정확한 견적은 타타리아로 문의해 주세요.</p>
-        <div class="text-center"><a href="tel:01028588967" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white text-lg sm:text-xl font-bold px-8 py-4 rounded-xl"><i class="fa-solid fa-phone mr-2"></i> 타타리아 전화 상담 010-2858-8967</a></div>
-      </div>
     </section>
 
-    <!-- 3. Comparison Section (Rent vs Lease) -->
-    <section id="compare" class="py-16 sm:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-                <h2 class="text-xs font-bold text-blue-600 tracking-wider uppercase mb-2">Compare Products</h2>
-                <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">나에게 맞는 상품은? 장기렌트 vs 리스 비교</p>
-                <p class="text-slate-600 mt-3 text-sm sm:text-base">운행 목적과 절세 조건, 개인 취향에 따라 가장 유리한 이용 방식이 달라집니다.</p>
+    <section class="py-12 sm:py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="text-center">
+                <p class="text-lg font-bold text-blue-600">아이오닉 9 특별 조건</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">아이오닉 9 롱레인지 익스클루시브 AWD</h2>
+                <p class="text-lg text-slate-600 mt-3">6인승 · 연 30,000km · 60개월 기준</p>
             </div>
 
-            <!-- Mobile Card View & Desktop Table View -->
-            <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
-                <table class="w-full text-left border-collapse">
+            <img src="ioniq9-promotion.png" alt="아이오닉 9 월 렌트료 프로모션" class="w-full rounded-2xl shadow-lg" loading="lazy">
+
+            <div class="grid lg:grid-cols-2 gap-6 items-start">
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-7">
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">아이오닉 9 견적 주요 조건</h3>
+                    <ul class="space-y-3 text-base sm:text-lg text-slate-700">
+                        <li>차량: 현대 아이오닉 9 롱레인지 익스클루시브 AWD (6인승)</li>
+                        <li>외장: 어비스 블랙 펄 / 빌트인 캠 2 포함</li>
+                        <li>차량 가격: 71,420,000원</li>
+                        <li>계약: 장기렌트 60개월 / 연 30,000km</li>
+                        <li>보증금·선납금: 없음 (초기 비용 0원)</li>
+                        <li>만기 잔존가치: 28,638,500원</li>
+                        <li class="font-extrabold text-blue-700">월 렌트료: 993,520원 (VAT·자동차세·보험료 포함)</li>
+                    </ul>
+                    <p class="text-sm sm:text-base text-slate-500 mt-4">
+                        차량 할인 및 보조금 반영 조건입니다. 실제 납입금은 심사와 계약 조건에 따라 달라질 수 있습니다.
+                    </p>
+                </div>
+                <img src="ioniq9-details.png" alt="아이오닉 9 상세 견적 조건" class="w-full rounded-2xl border border-slate-200" loading="lazy">
+            </div>
+
+            <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+                <h3 class="bg-slate-900 text-white text-xl sm:text-2xl font-bold p-5">차종별 월 납입료 안내 (60개월 기준)</h3>
+                <img src="monthly-price-table.png" alt="차종별 월 납입료 표" class="w-full" loading="lazy">
+            </div>
+            <p class="text-sm sm:text-base text-slate-500">월 납입료는 차량 재고, 옵션, 약정거리, 심사 결과에 따라 달라질 수 있습니다.</p>
+            <div class="text-center">
+                <a href="tel:01028588967" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white text-lg sm:text-xl font-bold px-8 py-4 rounded-xl">
+                    <i class="fa-solid fa-phone mr-2"></i> 타타리아 전화 상담 010-2858-8967
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="compare" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <p class="text-sm font-bold text-blue-600 uppercase mb-2">Compare Products</p>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">장기렌트와 리스 비교</h2>
+                <p class="text-base sm:text-lg text-slate-600 mt-3">운행 목적과 조건에 따라 적합한 이용 방식이 달라집니다.</p>
+            </div>
+            <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+                <table class="w-full text-left border-collapse bg-white text-sm sm:text-base">
                     <thead>
                         <tr class="bg-slate-900 text-white">
-                            <th class="p-4 sm:p-5 font-bold text-sm w-1/4">구분</th>
-                            <th class="p-4 sm:p-5 font-bold text-sm w-3/8 bg-blue-900/60 border-l border-slate-800">
-                                <span class="text-blue-300 font-extrabold mr-2">[장기렌트]</span> 실속형 & 관리 편의성
-                            </th>
-                            <th class="p-4 sm:p-5 font-bold text-sm w-3/8 border-l border-slate-800">
-                                <span class="text-cyan-400 font-extrabold mr-2">[신차 리스]</span> 품위 유지 & 일반 번호판
-                            </th>
+                            <th class="p-4">구분</th>
+                            <th class="p-4">장기렌트</th>
+                            <th class="p-4">신차 리스</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-200 bg-white text-sm">
-                        <tr>
-                            <td class="p-4 font-bold text-slate-900 bg-slate-50">번호판 종류</td>
-                            <td class="p-4 text-slate-700 bg-blue-50/30">렌트 전용 번호판 ('하', '허', '호')</td>
-                            <td class="p-4 text-slate-700">일반 자가용 번호판과 동일 (제한 없음)</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-bold text-slate-900 bg-slate-50">자동차 보험료</td>
-                            <td class="p-4 text-slate-700 bg-blue-50/30">월 렌트료에 포함 (사고 시에도 요율 할증 없음)</td>
-                            <td class="p-4 text-slate-700">개인 자동차 보험 가입 (보험 경력 지속 유지 가능)</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-bold text-slate-900 bg-slate-50">약정 주행거리</td>
-                            <td class="p-4 text-slate-700 bg-blue-50/30">무제한 선택 가능 (장거리 운행에 유리)</td>
-                            <td class="p-4 text-slate-700">연간 약정 거리 설정 (초과 시 정산금 발생)</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-bold text-slate-900 bg-slate-50">사업자 비용처리</td>
-                            <td class="p-4 text-slate-700 bg-blue-50/30">연간 최대 1,500만 원 (차량료+유지비) 비용 인정</td>
-                            <td class="p-4 text-slate-700">연간 최대 1,500만 원 (리스료+유지비) 비용 인정</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-bold text-slate-900 bg-slate-50">추천 대상</td>
-                            <td class="p-4 text-slate-700 font-medium bg-blue-50/30 text-blue-900">
-                                • 주행거리가 많은 운전자<br/>
-                                • 사고 이력으로 보험료 부담이 큰 운전자
-                            </td>
-                            <td class="p-4 text-slate-700 font-medium text-slate-900">
-                                • 일반 번호판 사용을 희망하는 개인/사업자<br/>
-                                • 기존 무사고 보험 경력을 계속 유지할 운전자
-                            </td>
-                        </tr>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr><td class="p-4 font-bold bg-slate-50">번호판</td><td class="p-4">렌트 전용 번호판 사용</td><td class="p-4">일반 번호판 사용</td></tr>
+                        <tr><td class="p-4 font-bold bg-slate-50">보험</td><td class="p-4">월 렌트료에 포함되는 상품이 일반적</td><td class="p-4">개인 자동차 보험 가입</td></tr>
+                        <tr><td class="p-4 font-bold bg-slate-50">주행거리</td><td class="p-4">계약 조건에 따라 선택</td><td class="p-4">연간 약정 거리 설정</td></tr>
+                        <tr><td class="p-4 font-bold bg-slate-50">추천 대상</td><td class="p-4">보험·차량 관리를 간편하게 하고 싶은 분</td><td class="p-4">일반 번호판과 보험 경력을 원하는 분</td></tr>
                     </tbody>
                 </table>
             </div>
-
-            <!-- Mobile View Cards -->
-            <div class="md:hidden space-y-6">
-                <!-- Rent Card -->
-                <div class="border border-blue-200 rounded-2xl p-6 bg-blue-50/30 relative">
-                    <div class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">신차 장기렌트</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">실속형 & 편리한 차량 관리</h3>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-blue-600 mt-1 mr-2.5"></i>
-                            <span><strong>번호판:</strong> '하', '허', '호' 전용 번호판</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-blue-600 mt-1 mr-2.5"></i>
-                            <span><strong>보험료:</strong> 월 렌트료 포함 (사고 시 할증 없음)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-blue-600 mt-1 mr-2.5"></i>
-                            <span><strong>주행거리:</strong> 약정 거리 무제한 선택 가능</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-blue-600 mt-1 mr-2.5"></i>
-                            <span><strong>절세 혜택:</strong> 사업자 연 최대 1,500만 원 비용처리</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Lease Card -->
-                <div class="border border-slate-200 rounded-2xl p-6 bg-white relative">
-                    <div class="inline-block bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">신차 리스</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">품위 유지 & 보험 경력 유지</h3>
-                    <ul class="space-y-3 text-sm text-slate-700">
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-slate-600 mt-1 mr-2.5"></i>
-                            <span><strong>번호판:</strong> 일반 자가용 번호판과 동일</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-slate-600 mt-1 mr-2.5"></i>
-                            <span><strong>보험료:</strong> 개인 자동차 보험 가입 (경력 유지)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-slate-600 mt-1 mr-2.5"></i>
-                            <span><strong>주행거리:</strong> 연간 약정 거리 설정</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-check text-slate-600 mt-1 mr-2.5"></i>
-                            <span><strong>절세 혜택:</strong> 사업자 연 최대 1,500만 원 비용처리</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- 4. Process Section -->
-    <section id="process" class="py-16 sm:py-24 bg-slate-100/70">
+    <section id="process" class="py-16 sm:py-24 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-                <h2 class="text-xs font-bold text-blue-600 tracking-wider uppercase mb-2">Process</h2>
-                <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">신차 출고 4단계 간편 프로세스</p>
-                <p class="text-slate-600 mt-3 text-sm sm:text-base">어려운 서류 준비부터 차량 인도까지, 전문 전담 매니저가 1:1로 함께합니다.</p>
+            <div class="text-center mb-12">
+                <p class="text-sm font-bold text-blue-600 uppercase mb-2">Process</p>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">신차 출고 4단계</h2>
+                <p class="text-base sm:text-lg text-slate-600 mt-3">견적 상담부터 차량 인도까지 안내해 드립니다.</p>
             </div>
-
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Step 1 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition relative">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">01</div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">간편 견적 신청</h3>
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        희망 차종, 이용 기간, 초기 비용 조건(보증금/선납금) 선택 후 상담 접수
-                    </p>
-                </div>
-                <!-- Step 2 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition relative">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">02</div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">실시간 비교 분석</h3>
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        국내 20여 개 금융/렌트사의 최저 금리와 특가 재고 차량 조건을 실시간 비교
-                    </p>
-                </div>
-                <!-- Step 3 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition relative">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">03</div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">심사 및 계약 진행</h3>
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        필요 서류 안내 및 신속 심사 진행 후 전자 계약 또는 방문 계약서 작성
-                    </p>
-                </div>
-                <!-- Step 4 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition relative">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg mb-6">04</div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">신차 출고 및 인도</h3>
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        공장 출고 후 썬팅/블랙박스 작업 진행, 고객 지정 장소로 안전하게 인도
-                    </p>
-                </div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm"><div class="text-blue-600 font-bold text-xl mb-4">01</div><h3 class="text-lg font-bold mb-2">간편 견적 신청</h3><p class="text-slate-600">희망 차종과 이용 조건을 알려 주세요.</p></div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm"><div class="text-blue-600 font-bold text-xl mb-4">02</div><h3 class="text-lg font-bold mb-2">조건 비교</h3><p class="text-slate-600">조건에 맞는 견적을 비교 안내합니다.</p></div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm"><div class="text-blue-600 font-bold text-xl mb-4">03</div><h3 class="text-lg font-bold mb-2">심사 및 계약</h3><p class="text-slate-600">심사 결과 확인 후 계약을 진행합니다.</p></div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm"><div class="text-blue-600 font-bold text-xl mb-4">04</div><h3 class="text-lg font-bold mb-2">차량 인도</h3><p class="text-slate-600">출고 일정을 확인하고 차량을 인도합니다.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Full Consultation Form Section (Main DB Form) -->
     <section id="quote-form" class="py-16 sm:py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-slate-900 rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-xl relative overflow-hidden">
-                <div class="text-center max-w-2xl mx-auto mb-10">
-                    <span class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">1:1 맞춤 컨설팅</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">신차 장기렌트·리스 무료 맞춤견적</h2>
-                    <p class="text-slate-400 text-sm sm:text-base mt-2">원하시는 조건을 선택해 주시면 가장 정확하고 합리적인 견적서를 보내드립니다.</p>
+            <div class="bg-slate-900 rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-xl">
+                <div class="text-center mb-10">
+                    <span class="inline-block bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full mb-3">1:1 맞춤 상담</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold">신차 장기렌트·리스 무료 견적</h2>
+                    <p class="text-slate-300 mt-2">원하시는 조건을 입력해 주세요.</p>
                 </div>
-
-                <form id="mainQuoteForm" onsubmit="handleMainSubmit(event)" class="space-y-6">
+                <form onsubmit="handleMainSubmit(event)" class="space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Name -->
                         <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">이름 / 상호명 <span class="text-blue-400">*</span></label>
-                            <input type="text" id="main-name" required placeholder="성함 또는 법인/사업자명" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
+                            <label class="block font-semibold mb-2">이름 / 상호명 *</label>
+                            <input type="text" id="main-name" required placeholder="성함 또는 사업자명" class="w-full px-4 py-3.5 bg-slate-800 border border-slate-700 rounded-xl text-white text-base">
                         </div>
-                        <!-- Phone -->
                         <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">연락처 <span class="text-blue-400">*</span></label>
-                            <input type="tel" id="main-phone" required placeholder="010-0000-0000" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
+                            <label class="block font-semibold mb-2">연락처 *</label>
+                            <input type="tel" id="main-phone" required placeholder="010-0000-0000" class="w-full px-4 py-3.5 bg-slate-800 border border-slate-700 rounded-xl text-white text-base">
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Car Model -->
                         <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">관심 차종 <span class="text-blue-400">*</span></label>
-                            <input type="text" id="main-car" required placeholder="예: 카니발 하이브리드, GV80 등" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
+                            <label class="block font-semibold mb-2">관심 차종 *</label>
+                            <input type="text" id="main-car" required placeholder="예: 아이오닉 9, 쏘나타" class="w-full px-4 py-3.5 bg-slate-800 border border-slate-700 rounded-xl text-white text-base">
                         </div>
-                        <!-- Business Type -->
                         <div>
-                            <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">이용 형태 <span class="text-blue-400">*</span></label>
-                            <select id="main-user-type" class="w-full px-4 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none text-white text-sm">
-                                <option value="개인/개인사업자">개인 / 개인사업자</option>
-                                <option value="법인사업자">법인사업자</option>
+                            <label class="block font-semibold mb-2">이용 형태</label>
+                            <select class="w-full px-4 py-3.5 bg-slate-800 border border-slate-700 rounded-xl text-white text-base">
+                                <option>개인 / 개인사업자</option>
+                                <option>법인사업자</option>
                             </select>
                         </div>
                     </div>
-
-                    <!-- Product Type Choice (Radio) -->
                     <div>
-                        <label class="block text-sm sm:text-base font-semibold text-slate-300 mb-2">희망 상품 선택 <span class="text-blue-400">*</span></label>
+                        <label class="block font-semibold mb-2">희망 상품</label>
                         <div class="grid grid-cols-3 gap-3">
-                            <label class="cursor-pointer">
-                                <input type="radio" name="product_type" value="장기렌트" checked class="peer sr-only">
-                                <div class="text-center py-3 border border-slate-700 rounded-xl text-sm font-semibold text-slate-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600 transition">
-                                    장기렌트
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="product_type" value="신차리스" class="peer sr-only">
-                                <div class="text-center py-3 border border-slate-700 rounded-xl text-sm font-semibold text-slate-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600 transition">
-                                    신차리스
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="product_type" value="추천필요" class="peer sr-only">
-                                <div class="text-center py-3 border border-slate-700 rounded-xl text-sm font-semibold text-slate-300 peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600 transition">
-                                    추천 필요
-                                </div>
-                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="product_type" value="장기렌트" checked> 장기렌트</label>
+                            <label class="cursor-pointer"><input type="radio" name="product_type" value="신차리스"> 신차리스</label>
+                            <label class="cursor-pointer"><input type="radio" name="product_type" value="추천필요"> 추천 필요</label>
                         </div>
                     </div>
-
-                    <!-- Privacy Agreement Checkbox (Mandatory for Naver Powerlink Approval) -->
-                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 space-y-3">
-                        <div class="flex items-start space-x-3">
-                            <input type="checkbox" id="privacy-check" required class="mt-1 w-4 h-4 text-blue-600 bg-slate-900 border-slate-700 rounded focus:ring-blue-500">
-                            <label for="privacy-check" class="text-xs text-slate-300 leading-relaxed cursor-pointer">
-                                <span class="font-bold text-white">[필수]</span> 개인정보 수집 및 이용에 동의합니다.
-                            </label>
-                        </div>
-                        <div class="text-xs sm:text-sm text-slate-400 pl-7 space-y-1 leading-normal">
-                            <p>• 수집 항목: 이름, 연락처, 관심 차종, 이용 형태, 희망 상품</p>
-                            <p>• 수집 목적: 신차 장기렌트·리스 최적 견적 안내 및 1:1 상담 진행</p>
-                            <p>• 보유 및 이용 기간: 상담 완료 후 즉시 파기 (관계 법령에 따름)</p>
+                    <div class="bg-slate-800/70 p-4 rounded-xl border border-slate-700">
+                        <label class="flex items-start gap-3">
+                            <input type="checkbox" id="privacy-check" required class="mt-1">
+                            <span><strong>[필수]</strong> 개인정보 수집 및 이용에 동의합니다.</span>
+                        </label>
+                        <div class="text-sm text-slate-300 mt-3 space-y-1">
+                            <p>수집 항목: 이름, 연락처, 관심 차종, 이용 형태, 희망 상품</p>
+                            <p>수집 목적: 견적 안내 및 상담 진행</p>
+                            <p>보유 및 이용 기간: 상담 완료 후 파기 (관계 법령에 따름)</p>
                         </div>
                     </div>
-
-                    <!-- Submit Button -->
-                    <div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-600/30 transition text-base sm:text-lg">
-                            무료 견적서 신청하기
-                        </button>
-                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl text-lg">무료 견적 신청하기</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- 6. Footer (Legal & Naver Powerlink Compliance Information) -->
-    <footer class="bg-slate-950 text-slate-400 text-xs py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            
-            <!-- Business Info Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b border-slate-800/80">
+    <footer class="bg-slate-950 text-slate-300 py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border-b border-slate-800 pb-6">
                 <div class="space-y-2">
-                    <p class="text-sm font-bold text-slate-200">타타리아 | 신차 장기렌트·리스</p>
+                    <p class="text-lg font-bold text-white">타타리아 | 신차 장기렌트·리스</p>
                     <p>상호명: 타타리아 | 대표자명: 임석</p>
                     <p>사업자등록번호: 660-43-01337</p>
                 </div>
                 <div class="space-y-2 md:text-right">
-                    <p class="text-sm font-bold text-slate-200">고객센터 & 견적 문의</p>
-                    <a href="tel:01028588967" class="text-xl sm:text-2xl font-extrabold text-blue-400">010-2858-8967</a>
-                    <p>전화 상담 및 견적 문의</p>
+                    <p class="font-bold text-white">전화 상담 및 견적 문의</p>
+                    <a href="tel:01028588967" class="text-2xl font-extrabold text-blue-400">010-2858-8967</a>
                 </div>
             </div>
-
-            <!-- Financial Disclaimer Notice (Crucial for Powerlink & Financial Regulations) -->
-            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800/60 text-xs sm:text-sm leading-relaxed space-y-2 text-slate-400">
-                <p class="font-bold text-slate-300">[광고 유의사항 및 법적 고지]</p>
-                <p>• 본 사이트는 신차 장기렌트 및 리스 상품의 견적 비교 상담을 안내해 드리는 심사 준수 페이지입니다.</p>
-                <p>• 월 납입금 및 계약 조건은 차량 가격, 옵션, 계약 기간, 보증금/선납금 비율, 여신금융회사 심사 기준(개인 신용도)에 따라 달라질 수 있습니다.</p>
-                <p>• 본 사이트는 '100% 무조건 승인', '최저가 확정' 등 금융소비자 오인 우려가 있는 단정적 표현을 사용하지 않습니다.</p>
+            <div class="text-sm leading-relaxed text-slate-400">
+                <p class="font-bold text-slate-300 mb-2">광고 유의사항</p>
+                <p>월 납입금과 계약 조건은 차량 가격, 옵션, 계약 기간, 보증금·선납금, 심사 결과에 따라 달라질 수 있습니다.</p>
             </div>
-
-            <div class="text-center text-slate-500 text-xs sm:text-sm pt-4">
-                Copyright © 타타리아. All rights reserved.
-            </div>
+            <p class="text-center text-sm text-slate-500">Copyright © 타타리아. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Result Modal UI (Native JavaScript Triggered) -->
-    <div id="successModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl transform transition-all">
+    <div id="successModal" class="fixed inset-0 bg-slate-900/70 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl">
             <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto text-2xl">
                 <i class="fa-solid fa-check"></i>
             </div>
             <h3 class="text-xl font-bold text-slate-900">견적 신청 완료</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-                견적 요청이 성공적으로 접수되었습니다.<br/>
-                담당 매니저 확인 후 입력하신 번호로 신속하게 안내해 드리겠습니다.
-            </p>
-            <button onclick="closeModal()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl text-sm transition">
-                확인
-            </button>
+            <p class="text-slate-600">견적 요청이 접수되었습니다.<br>담당자가 확인 후 입력하신 번호로 연락드리겠습니다.</p>
+            <button onclick="closeModal()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl">확인</button>
         </div>
     </div>
 
     <script>
-        // Quick Form Submission Logic
         function handleQuickSubmit(event) {
             event.preventDefault();
-            const name = document.getElementById('quick-name').value;
-            const phone = document.getElementById('quick-phone').value;
-            const car = document.getElementById('quick-car').value;
+            const name = document.getElementById('quick-name').value.trim();
+            const phone = document.getElementById('quick-phone').value.trim();
+            const car = document.getElementById('quick-car').value.trim();
 
-            if(!name || !phone || !car) {
-                alert('모든 필수 항목을 입력해주세요.');
+            if (!name || !phone || !car) {
+                alert('모든 필수 항목을 입력해 주세요.');
                 return;
             }
-
             openModal();
             event.target.reset();
         }
 
-        // Main Form Submission Logic
         function handleMainSubmit(event) {
             event.preventDefault();
-            const name = document.getElementById('main-name').value;
-            const phone = document.getElementById('main-phone').value;
-            const car = document.getElementById('main-car').value;
+            const name = document.getElementById('main-name').value.trim();
+            const phone = document.getElementById('main-phone').value.trim();
+            const car = document.getElementById('main-car').value.trim();
             const privacyChecked = document.getElementById('privacy-check').checked;
 
-            if(!privacyChecked) {
-                alert('개인정보 수집 및 이용 동의에 체크해 주세요.');
+            if (!name || !phone || !car) {
+                alert('모든 필수 항목을 입력해 주세요.');
                 return;
             }
-
-            if(!name || !phone || !car) {
-                alert('모든 필수 입력 사항을 채워주세요.');
+            if (!privacyChecked) {
+                alert('개인정보 수집 및 이용에 동의해 주세요.');
                 return;
             }
-
             openModal();
             event.target.reset();
         }
 
-        // Modal Open / Close Handler
         function openModal() {
             document.getElementById('successModal').classList.remove('hidden');
         }
